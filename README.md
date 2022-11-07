@@ -1,3 +1,7 @@
+# purpose
+
+This is my code to learn both python and linux
+
 # mycode (Project Title)
 
 One Paragraph of your project description goes here. Describe what you're trying to do.
@@ -20,4 +24,4 @@ What things are needed to install the software and how to install them. For now,
 
 ## Authors
 
-* **Your Name** - *Initial work* - [YourWebsite](https://example.com/)
+* **Mark S** - *Initial work* - [YourWebsite](https://example.com/)
