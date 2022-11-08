@@ -12,4 +12,4 @@ print(hello)
 
 #TODO: further research on concat + versus comma , seperations
 
-
+print(f"Hello, {name}! Happy {dayOfTheWeek}!") #better way
