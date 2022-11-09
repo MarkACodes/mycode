@@ -1,0 +1,4 @@
+fruits ['apple', 'banana', 'orange', ['strawberries', 'blueberries'], 'm', 'a', 'n', 'g', 'o', 'pineapple']
+
+print(fruits)
+
