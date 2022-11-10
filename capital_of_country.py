@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
+# coding=utf-8
 
+
+from countryinfo import CountryInfo
 
 countries = {
     "USA": "Washington, D.C.",
@@ -71,3 +74,35 @@ while True:
                 print("Thanks for playing the Capital of the World program. Goodbye.")
                 break
 
+
+
+#using imported countryinfo module
+#country
+print("******************************************************************************************************")
+print("GREAT! Now let's try a different way to find the capital of a country, any country, and way more info.")
+print("******************************************************************************************************")
+print()
+country = input('Type in any country (even those not in provided list!) to see all information: ')
+#capital
+capital = CountryInfo(country).capital()
+print(f'The capital of {country} is {capital}')
+#alt spellings
+alt_spellings = CountryInfo(country).alt_spellings()
+print(f'The alt spellings of {country} are {alt_spellings}')
+#borders
+borders = CountryInfo(country).borders()
+print(f'The borders of {country} are {borders}')
+#population
+population = CountryInfo(country).population()
+print(f'The population of {country} is {population}')
+#area
+area = CountryInfo(country).area()
+print(f'The area of {country} is {area}')
+#languages
+languages = CountryInfo(country).languages()
+print(f'The languages of {country} are {languages}')
+
+
+print("******************************************************************************************************")
+print("Thank you for Playing!.")
+print("******************************************************************************************************")
