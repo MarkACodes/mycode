@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # coding=utf-8
 
+# pip install countryinfo if needed
 
 from countryinfo import CountryInfo
 
@@ -47,34 +48,27 @@ countries = {
 # create a welcome message
 print("Welcome to the Capital of the World program.")
 
-# Game loop:
-while True:
-    # add a number to each country in dictionary
-    for i, country in enumerate(countries):
-        # print the number and country
-        print(f"{i + 1}. {country}")
-    # prompt user for country
-    country = input("Please enter a number from the list above to see the capital of the country: ")
-    print()
-    # check if country is in dictionary
-    if int(country) in range(1, len(countries) + 1):
-        print(f"The capital of {list(countries.keys())[int(country) - 1]} is {list(countries.values())[int(country) - 1]}.")
+def main():
+    while True:
+        # add a number to each country in dictionary
+        for i, country in enumerate(countries):
+            # print the number and country
+            print(f"{i + 1}. {country}")
+        # prompt user for country
+        country = input("Please enter a number from the list above to see the capital of the country: ")
         print()
-        break
-    else:
-        country = input("Please enter a VALID number from list provided: ")
+        # check if country is in dictionary
         if int(country) in range(1, len(countries) + 1):
             print(f"The capital of {list(countries.keys())[int(country) - 1]} is {list(countries.values())[int(country) - 1]}.")
             print()
             break
         else:
-            print("You have entered an invalid number. Goodbye.")
-            # ask if user wants to play again
-            if input("Would you like to play again (y/n)? ").lower() == "n":
-                print("Thanks for playing the Capital of the World program. Goodbye.")
+            country = input("Please enter a VALID number from list provided: ")
+            if int(country) in range(1, len(countries) + 1):
+                print(f"The capital of {list(countries.keys())[int(country) - 1]} is {list(countries.values())[int(country) - 1]}.")
+                print()
                 break
-
-
+main()
 
 #using imported countryinfo module
 #country
@@ -106,3 +100,5 @@ print(f'The languages of {country} are {languages}')
 print("******************************************************************************************************")
 print("Thank you for Playing!.")
 print("******************************************************************************************************")
+
+
